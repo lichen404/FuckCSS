@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>流光文字</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            font-family: "宋体";
+            font-weight: bold;
+            background: url("./bg.jpg") center center no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        #text {
+            display: inline-block;
+            /*清除外边距合并*/
+            margin-top: 100px;
+            line-height: 145px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            /* -webkit-text-fill-color: transparent; */
+            color: transparent;
+            background-size: 200% 100%;
+            background-image: linear-gradient(to right, #acd7f5, #93b9ed 25%, #6d87da 50%, #4261aa 75%, #433256 100%);
+            -webkit-background-clip: text;
+            animation: text 5s linear infinite;
+            background-clip: text;
+        }
+
+        @keyframes text {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text">你的名字
+
+    </div>
+</body>
+
+</html>
