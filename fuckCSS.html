@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .disabled {
+            cursor: not-allowed;
+        }
+
+        .disabled a {
+
+            pointer-events: none;
+
+        }
+
+        .block {
+
+
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border: 1px black solid;
+            opacity: 0.5;
+            pointer-events: none;
+            transform: translateX(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="disabled">
+        <a>My Link</a>
+    </div>
+    <div class="block">
+    </div>
+    <div>
+        <a href="http://www.baidu.com">baidu</a>
+    </div>
+
+</body>
+
+</html>
